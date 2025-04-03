@@ -10,7 +10,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: rgb(157, 255, 250);
+    background-color: lightgray;
     row-gap: 10px;
 }
 
@@ -25,7 +25,7 @@ body{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: lightpink;
+    background-color:  rgb(157, 255, 250);
     row-gap: 10px;
 }
 

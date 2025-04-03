@@ -9,7 +9,15 @@
 <body>
     <section class="borde">
         <h1>Borde</h1>
-        <img src="./assets/img/border.jpg" alt="malenia">
+        <img id="img" onclick="
+        img = document.querySelector('#img')
+        if(img.style.border != '2px solid red'){
+            img.style.border = '2px solid red'
+        } else { 
+            img.style.border = 'none'
+        }
+        "
+        src="./assets/img/border.jpg" alt="malenia">
     </section>
 
     <section class="stickerSection">
@@ -34,7 +42,20 @@
              
         </article>
 
-        <button>Verificar</button>
+        <button onclick="
+        a = Number(document.querySelector('#sticker1'))
+        b = Number(document.querySelector('#sticker2'))
+        c = Number(document.querySelector('#sticker3'))
+        mensaje = document.querySelector('#mensajeSticker')
+        suma = a+b+c
+        if(suma <= 10) {
+            mensaje.innerHTML = 'Llevas suma stickers'
+            mensaje.style.color = 'green'
+        } else {
+            mensaje.innerHTML ='Llevas demasiados stickers'
+            mensaje.style.color = 'red'
+        }
+        ">Verificar</button>
         
         <p id="mensajeSticker"></p>
     </section>
