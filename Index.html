@@ -43,13 +43,13 @@
         </article>
 
         <button onclick="
-        a = Number(document.querySelector('#sticker1'))
-        b = Number(document.querySelector('#sticker2'))
-        c = Number(document.querySelector('#sticker3'))
+        a = Number(document.querySelector('#sticker1').value)
+        b = Number(document.querySelector('#sticker2').value)
+        c = Number(document.querySelector('#sticker3').value)
         mensaje = document.querySelector('#mensajeSticker')
         suma = a+b+c
         if(suma <= 10) {
-            mensaje.innerHTML = 'Llevas suma stickers'
+            mensaje.innerHTML = 'Llevas '+suma+' stickers'
             mensaje.style.color = 'green'
         } else {
             mensaje.innerHTML ='Llevas demasiados stickers'
