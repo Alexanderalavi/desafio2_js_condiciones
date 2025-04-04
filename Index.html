@@ -22,6 +22,7 @@
 
     <section class="stickerSection">
         <h1>Stickers</h1>
+        <p class="condicion">Puedes llevar hasta un maximo de 10 stickers</p>
 
         <article class="stickers">
 
@@ -49,7 +50,7 @@
         mensaje = document.querySelector('#mensajeSticker')
         suma = a+b+c
         if(suma <= 10) {
-            mensaje.innerHTML = 'Llevas '+suma+' stickers'
+            mensaje.innerHTML = `Llevas ${suma} stickers`
             mensaje.style.color = 'green'
         } else {
             mensaje.innerHTML ='Llevas demasiados stickers'
@@ -61,9 +62,61 @@
     </section>
 
 
-    <section class="contraseña">
+    <section class="contrasena">
+        <h1>Ingresar Password</h1>
+        <article class="selectores">
+        <select name="select1" id="s1">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+        </select>
+        <select name="select2" id="s2">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+        </select>
+        <select name="select3" id="s3">
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+        </select>
+    </article>
 
-
+        <button onclick="
+        n1 = Number(document.querySelector('#s1').value)
+        n2 = Number(document.querySelector('#s2').value)
+        n3 = Number(document.querySelector('#s3').value)
+        ver = document.querySelector('#ver')
+        if(n1 == 9 && n2 == 1 && n3 == 1){
+            ver.innerHTML= 'Password 1 es correcto'
+            ver.style.color = 'green'
+        } else if (n1 == 7 && n2 == 1 && n3 == 4){
+            ver.innerHTML = 'Password 2 es correcto'
+            ver.style.color = 'green'
+        } else {
+            ver.innerHTML = 'Password incorrecto'
+            ver.style.color = 'red'
+        }
+        ">verificar</button>
+        <p id="ver"></p>
     </section>
 
 

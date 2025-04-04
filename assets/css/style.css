@@ -29,6 +29,9 @@ body{
     row-gap: 10px;
 }
 
+.condicion{
+    font-style: italic;
+}
 .stickers{
     display: flex;
     flex-direction: row;
@@ -47,4 +50,13 @@ body{
 .sticker img{
     width: 200px;
     gap: 10px;
+}
+
+.contrasena{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+    background-color: lightcyan;
 }
